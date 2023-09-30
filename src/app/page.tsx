@@ -18,7 +18,7 @@ function Home() {
     setPacientes(pacientes.filter((p) => p.namePet !== paciente.namePet));
   };
   const updatePaciente = (paciente: Inputs) => {
-    
+    /*  */
   };
 
   const addPaciente = (data: Inputs) => {
@@ -39,9 +39,7 @@ function Home() {
           </p>
           <div className="w-full flex justify-center">
             <div className="w-3/4 rounded-lg bg-white shadow">
-
               <UseForm onAddPaciente={addPaciente} />
-
             </div>
           </div>
         </div>
@@ -55,12 +53,11 @@ function Home() {
               </span>{" "}
             </p>
 
-            <PacientesList 
+            <PacientesList
               pacientes={pacientes}
               deletePaciente={deletePaciente}
               updatePaciente={updatePaciente}
             />
-
           </div>
         </div>
       </div>
